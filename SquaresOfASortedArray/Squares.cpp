@@ -35,6 +35,6 @@ O(n) solution using a different approach?
 
 My answer:
 We can see  that the array is already sorted in an incresing order, with negatives, then zeroes,
-then positives. We can these into 3 separate parts, Then after squaring, can approach the O(n)
-time, using a merge sort to insert from 2 sorted arrays, ignoring the zeroes, which are placed at
-the beginning.  */
+then positives. We can these into 3 separate parts. Then after squaring, we can approach the O(n)
+time using a merge sort to insert from 2 sorted arrays. We can ignore the zeroes, which are placed at
+the beginning of the final array.  */
