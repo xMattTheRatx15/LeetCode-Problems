@@ -17,6 +17,14 @@ Constraints:
 nums is sorted in non-decreasing order. */
 
 //My solution
+
+//For sort, vector, and pow
+#include <vector>
+#include <cmath>
+#include <algorithm>
+
+using namespace std;
+
 class Solution {
 public:
     vector<int> sortedSquares(vector<int>& nums) {
