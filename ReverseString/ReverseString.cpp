@@ -16,6 +16,10 @@ s[i] is a printable ascii character.
 */
 
 //My solution
+#include <vector>
+
+using namespace std;
+
 class Solution {
 public:
     void reverseString(vector<char>& s) {
