@@ -18,12 +18,26 @@ n == nums.length
 -104 <= nums[i] <= 104 
 */
 #include<vector>
+#include<algorithm>
 
 using namespace std;
 
 class Solution {
 public:
     double findMaxAverage(vector<int>& nums, int k) {
-        
+        double curr = 0.0;
+
+        for (int i = 0; i < k; i++) {
+            curr += nums[i];
+        }
+
+        double ans = curr / k;
+
+        for (int i = k; i < nums.size(); i++) {
+            curr += nums[i] - nums[i - k];
+            ans = max(ans, (curr / k));
+        }
+
+        return ans;
     }
 };
